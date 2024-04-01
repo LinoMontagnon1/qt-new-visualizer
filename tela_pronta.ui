@@ -1,0 +1,2046 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1440</width>
+    <height>920</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background: rgb(28, 33, 31)</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <widget class="QLineEdit" name="lineEdit">
+    <property name="geometry">
+     <rect>
+      <x>400</x>
+      <y>20</y>
+      <width>411</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLineEdit {
+    border-radius: 5px; /* Valor menor para menos arredondamento */
+    background: #424d49 
+}
+</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_3">
+    <property name="geometry">
+     <rect>
+      <x>800</x>
+      <y>20</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>2.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>70</y>
+      <width>1421</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame[frameShape=&quot;4&quot;] { /* 4 é o valor de QFrame::HLine */
+    border-top: 2px solid #2f3734; /* Ajuste a espessura e a cor conforme necessário */
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent; /* Isso evita que a cor de fundo cubra a borda superior */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QOpenGLWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>130</y>
+      <width>1041</width>
+      <height>741</height>
+     </rect>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_2">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>880</y>
+      <width>151</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>CHEST_PAT000-002</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_4">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>880</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Scale: 0.42</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>580</x>
+      <y>880</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>W: 3008 | L: 2987</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>880</y>
+      <width>181</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tech ID: 237 (Ville Norlund)</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>90</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+        color: #898a81;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>ID: PAT0002851</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_8">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>80</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Pixel value: 97x</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_9">
+    <property name="geometry">
+     <rect>
+      <x>210</x>
+      <y>100</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Sum: 99xy</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_10">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>80</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Acq. Date: 12/07/2022</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_11">
+    <property name="geometry">
+     <rect>
+      <x>390</x>
+      <y>100</y>
+      <width>141</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Acq. Time: 09:34:37 AM</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_12">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>80</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Exp. Index: 2090</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_13">
+    <property name="geometry">
+     <rect>
+      <x>600</x>
+      <y>100</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>STD: FFU67</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_14">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>80</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Min: 125xx</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_15">
+    <property name="geometry">
+     <rect>
+      <x>810</x>
+      <y>100</y>
+      <width>91</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>8</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Max: 255xx</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>130</y>
+      <width>361</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame[frameShape=&quot;4&quot;] { /* 4 é o valor de QFrame::HLine */
+    border-top: 2px solid #2f3734; /* Ajuste a espessura e a cor conforme necessário */
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    background-color: transparent; /* Isso evita que a cor de fundo cubra a borda superior */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_16">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>80</y>
+      <width>61</width>
+      <height>39</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>39</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Tools</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>1130</x>
+      <y>90</y>
+      <width>41</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QFrame {
+    border: none; /* Isso remove todas as bordas pré-existentes */
+    border-left: 2px solid white; /* Isso aplica uma borda sólida branca apenas no lado esquerdo */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_17">
+    <property name="geometry">
+     <rect>
+      <x>1140</x>
+      <y>80</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>41</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+        color: #898a81;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Graphics</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_18">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>140</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Controls</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_19">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>290</y>
+      <width>171</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Image quality settings</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_20">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>430</y>
+      <width>61</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Filters</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_21">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>600</y>
+      <width>121</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Recontruction</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_22">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>756</y>
+      <width>41</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Run</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_23">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>470</y>
+      <width>101</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Reduce Noise</string>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>500</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #262626; /* Cor da borda da trilha */
+    height: 4px; /* Altura da trilha ainda mais reduzida */
+    background: #333333; /* Cor de fundo da trilha */
+    margin: 0px 10px; /* Ajustar margens laterais para a alça alcançar as extremidades */
+}
+
+QSlider::handle:horizontal {
+    background: #bde5d5; /* Cor de fundo da alça */
+
+    width: 20px; /* Largura da alça */
+    height: 20px; /* Altura da alça */
+    border-radius: 10px; /* Arredondamento da borda da alça para manter a forma circular */
+    margin-top: -8px; /* Margem superior ajustada */
+    margin-bottom: -8px; /* Margem inferior ajustada */
+    position: absolute; /* Posicionamento absoluto para ajustes precisos */
+}
+
+QSlider::sub-page:horizontal {
+    background: #bde5d5; /* Cor da parte preenchida da trilha à esquerda da alça */
+    border-radius: 2px; /* Borda arredondada da parte preenchida */
+}
+
+QSlider::add-page:horizontal {
+    background: #555555; /* Cor da parte não preenchida da trilha à direita da alça */
+    border-radius: 2px; /* Borda arredondada da parte não preenchida */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QSlider" name="horizontalSlider_2">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>570</y>
+      <width>331</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QSlider::groove:horizontal {
+    border: 1px solid #262626; /* Cor da borda da trilha */
+    height: 4px; /* Altura da trilha ainda mais reduzida */
+    background: #333333; /* Cor de fundo da trilha */
+    margin: 0px 10px; /* Ajustar margens laterais para a alça alcançar as extremidades */
+}
+
+QSlider::handle:horizontal {
+    background: #bde5d5; /* Cor de fundo da alça */
+
+    width: 20px; /* Largura da alça */
+    height: 20px; /* Altura da alça */
+    border-radius: 10px; /* Arredondamento da borda da alça para manter a forma circular */
+    margin-top: -8px; /* Margem superior ajustada */
+    margin-bottom: -8px; /* Margem inferior ajustada */
+    position: absolute; /* Posicionamento absoluto para ajustes precisos */
+}
+
+QSlider::sub-page:horizontal {
+    background: #bde5d5; /* Cor da parte preenchida da trilha à esquerda da alça */
+    border-radius: 2px; /* Borda arredondada da parte preenchida */
+}
+
+QSlider::add-page:horizontal {
+    background: #555555; /* Cor da parte não preenchida da trilha à direita da alça */
+    border-radius: 2px; /* Borda arredondada da parte não preenchida */
+}
+</string>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_24">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>540</y>
+      <width>131</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Improve sharpness</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_25">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>111</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>Captura de tela 2024-03-25 130337.png</pixmap>
+    </property>
+    <property name="scaledContents">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label">
+    <property name="geometry">
+     <rect>
+      <x>190</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/toggle-right.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_26">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>20</y>
+      <width>151</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QLabel {
+        color: #898a81;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>Anonymous mode</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_27">
+    <property name="geometry">
+     <rect>
+      <x>920</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/corner-up-right (1).svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_28">
+    <property name="geometry">
+     <rect>
+      <x>970</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/download-cloud.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_29">
+    <property name="geometry">
+     <rect>
+      <x>1020</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/database.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_30">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/printer.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_31">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/message-circle.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_32">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/folder.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_33">
+    <property name="geometry">
+     <rect>
+      <x>1220</x>
+      <y>20</y>
+      <width>31</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="pixmap">
+     <pixmap>../../Downloads/settings.svg</pixmap>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>15</y>
+      <width>131</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>12</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: transparent;
+    color: white;
+    border-radius: 10px;
+    padding: 5px 15px;
+    border: 2px solid white;
+
+
+}
+
+QPushButton:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Branco com transparência */
+}
+
+QPushButton:pressed {
+    background-color: rgba(255, 255, 255, 0.4); /* Branco com mais transparência */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>New Image</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_2">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>open</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_3">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>220</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>rotate</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_4">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>colormaps</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_5">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>170</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>clear</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_6">
+    <property name="geometry">
+     <rect>
+      <x>1190</x>
+      <y>220</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>histogram</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_7">
+    <property name="geometry">
+     <rect>
+      <x>1310</x>
+      <y>220</y>
+      <width>111</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>apply fat field</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_8">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>330</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ROI 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_9">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>330</y>
+      <width>171</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>ROI 2</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_10">
+    <property name="geometry">
+     <rect>
+      <x>1070</x>
+      <y>380</y>
+      <width>351</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>CALCULATE CNR - SNR</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_34">
+    <property name="geometry">
+     <rect>
+      <x>1090</x>
+      <y>642</y>
+      <width>81</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>projections</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_35">
+    <property name="geometry">
+     <rect>
+      <x>1270</x>
+      <y>705</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>dim X</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_36">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>724</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>slices</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_37">
+    <property name="geometry">
+     <rect>
+      <x>1250</x>
+      <y>653</y>
+      <width>71</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>pixel size</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_38">
+    <property name="geometry">
+     <rect>
+      <x>1120</x>
+      <y>685</y>
+      <width>51</width>
+      <height>21</height>
+     </rect>
+    </property>
+    <property name="minimumSize">
+     <size>
+      <width>0</width>
+      <height>0</height>
+     </size>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>10</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">    QLabel {
+        color: #FFFFFF;
+        padding: 4px;
+    }
+
+</string>
+    </property>
+    <property name="text">
+     <string>dim Y</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_12">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>680</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0.45</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_13">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>640</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0.45</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_14">
+    <property name="geometry">
+     <rect>
+      <x>1170</x>
+      <y>720</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0.45</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_15">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>650</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0.45</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_16">
+    <property name="geometry">
+     <rect>
+      <x>1320</x>
+      <y>700</y>
+      <width>71</width>
+      <height>31</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>0.45</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_11">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>794</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>run with CPU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_17">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>794</y>
+      <width>161</width>
+      <height>51</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #090b0a; /* Fundo preto */
+    color: white; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #424d49; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #97b8ab; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>run with GPU</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_18">
+    <property name="geometry">
+     <rect>
+      <x>1080</x>
+      <y>866</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #a1c3b5; /* Fundo preto */
+    color: black; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #97b8ab; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #88a599; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #88a599; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #97b8ab; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>save image</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="pushButton_19">
+    <property name="geometry">
+     <rect>
+      <x>1260</x>
+      <y>866</y>
+      <width>161</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Satoshi</family>
+      <pointsize>11</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton {
+    background-color: #d04646; /* Fundo preto */
+    color: black; /* Texto branco */
+    border-radius: 8px; /* Bordas arredondadas */
+
+
+    border: 2px solid #2f3734; /* Borda cinza */
+}
+
+QPushButton:hover {
+    background-color: #bf4040; /* Fundo cinza escuro para o estado hover */
+    border: 2px solid #bf4040; /* Borda cinza clara para o estado hover */
+}
+
+QPushButton:pressed {
+    background-color: #d04646; /* Fundo mais escuro no estado pressed */
+}
+</string>
+    </property>
+    <property name="text">
+     <string>run with CPU</string>
+    </property>
+   </widget>
+  </widget>
+ </widget>
+ <resources>
+  <include location="hapi logo.qrc"/>
+ </resources>
+ <connections/>
+</ui>
